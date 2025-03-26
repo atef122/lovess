@@ -1,0 +1,67 @@
+body {
+    background: linear-gradient(to right, #ff758c, #ff7eb3);
+    color: white;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    overflow: hidden;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    animation: pulse 2s infinite;
+}
+
+.glow-button {
+    background: #ff4b5c;
+    color: white;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: 0.3s;
+    box-shadow: 0 0 10px rgba(255, 75, 92, 0.7);
+}
+
+.glow-button:hover {
+    box-shadow: 0 0 20px rgba(255, 75, 92, 1);
+    transform: scale(1.1);
+}
+
+.glow-text {
+    font-size: 1.5rem;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+.music-button {
+    margin-top: 20px;
+    background: #ffcc00;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.1); }
+    100% { transform: scale(1); }
+}
+
+.stars {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url('stars.png');
+    animation: moveStars 50s linear infinite;
+}
+
+@keyframes moveStars {
+    from { background-position: 0 0; }
+    to { background-position: 10000px 5000px; }
+}
